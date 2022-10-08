@@ -1,0 +1,35 @@
+{
+  "name": "test-rollup-postcss-and-bootstrap",
+  "description": "test-rollup-postcss-and-bootstrap",
+  "scripts": {
+    "reset": "rm -fr dest/* && rm -fr package-lock.json && rm -fr node_modules && npm i",
+    "postcss": "node ./run_postcss.js",
+    "postcss_nodesass": "node ./run_postcss_nodesass.js",
+    "rollup": "node ./run_rollup.js",
+    "all": "node ./run_postcss.js && node ./run_postcss_nodesass.js && node ./run_rollup.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/afialapis/test-rollup-postcss-and-bootstrap.git"
+  },
+  "author": "donato@afialapis.com",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.18.6",
+    "@babel/eslint-parser": "^7.18.2",
+    "autoprefixer": "^10.4.12",
+    "bootstrap": "^5.1.3",
+    "eslint": "^8.18.0",
+    "node-sass": "^7.0.3",
+    "postcss": "^8.4.17",
+    "postcss-nested": "^6.0.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup": "^2.75.7"
+  },
+  "overrides": {
+    "css-select": {
+      "nth-check": "2.0.1"
+    }
+  }
+}
