@@ -1,12 +1,12 @@
 # test-rollup-postcss-and-bootstrap
 
-Repo which shows an error on `rollup-plugin-postcss` when doing this:
+Repo which shows an error on `rollup-plugin-postcss` when importing `bootstrap`'s minified file, like this:
 
 ```scss
   @import '~bootstrap/dist/css/bootstrap.min.css';
 ```
 
-Error disappears if we do:
+Error disappears if we import the normal file:
 
 ```scss
   @import '~bootstrap/dist/css/bootstrap.css';
@@ -49,7 +49,7 @@ The error we can see when running `rollup-plugin-postcss` is this:
 ```
 
 
-This is the related `css` failing (lines 3764-3780 of `node_modules/bootstrap/dist/css/bootstrap.css`): 
+This is the related `css` failing (lines 3764-3780 of the unminified file, `node_modules/bootstrap/dist/css/bootstrap.css`): 
 
 ```css
 .navbar {
