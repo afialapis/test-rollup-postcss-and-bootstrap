@@ -24,12 +24,6 @@
     "postcss": "^8.4.17",
     "postcss-nested": "^6.0.0",
     "rollup-plugin-postcss": "^4.0.2",
-    "rollup-plugin-terser": "^7.0.2",
     "rollup": "^2.75.7"
-  },
-  "overrides": {
-    "css-select": {
-      "nth-check": "2.0.1"
-    }
   }
 }
